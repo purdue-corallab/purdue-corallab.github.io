@@ -1,0 +1,345 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>CoRAL Lab</title>
+<style>
+  * {box-sizing: border-box}
+  body {font-family: Verdana, sans-serif; margin:0}
+  .mySlides {display: none}
+  img {vertical-align: middle;}
+  
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: #89CFF0;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: F0FFFF;
+    background-color:slategrey;
+    font-size: 22px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #89CFF0;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+  </style>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-item"><a href="corallab.html" class="current">Home</a></div>
+<div class="menu-item"><a href="#cm">Current Members</a></div>
+<div class="menu-item"><a href="#ap">Active Projects</a></div>
+<div class="menu-item"><a href="publication.html">Publications</a></div>
+<div class="menu-item"><a href="#ju">Joining Us</a></div>
+</td>
+<td id="layout-content">
+<br/>
+<h1> Purdue's <font color="	#800000">Co</font>gnitive <font color="	#800000">R</font>obot <font color="	#800000">A</font>utonomy &amp; <font color="	#800000">L</font>earning (<font color="	#800000">CoRAL</font>) Lab  </h1>  
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <img src="logo.svg" style ="width:900px;height:400px" align="middle">
+    <div class="text">Welcome to PurdueCS CoRAL Lab!</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="mug.gif" style ="width:900px;height:400px" align="middle">
+    <div class="text">Constrained Manipulation</div>
+  </div>
+
+
+    
+  <div class="mySlides fade">
+    <img src="mpnet_car.gif" style ="width:900px;height:400px" align="middle">
+    <div class="text">Autonomous Visual Navigation</div>
+  </div>
+
+
+
+  <div class="mySlides fade">
+    <img src="MPNet_Baxter.gif" style ="width:900px;height:400px" align="middle">
+    <div class="text">Task and Motion Planning</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="nerp.gif" style ="width:900px;height:400px" align="middle">
+    <div class="text">Vision-based Semantic Grasping</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="hri.JPG" style ="width:900px;height:400px" align="middle">
+    <div class="text">Human-Robot Collaboration</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="srl.gif" style ="width:900px;height:400px" align="middle">
+    <div class="text">Scalable Deep Reinforcement Learning</div>
+  </div>
+
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+    <span class="dot" onclick="currentSlide(4)"></span> 
+    <span class="dot" onclick="currentSlide(5)"></span> 
+    <span class="dot" onclick="currentSlide(6)"></span>
+    <span class="dot" onclick="currentSlide(7)"></span> 
+  </div>
+  
+  <script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+
+<h2 id="ap">Active Projects</h2>
+<p>We perform fundamental and applied research in machine learning, computer vision, and artificial intelligence to design and develop intelligent robotic systems. 
+Our work touches on various problems, including dextrous manipulation and control, mobile navigation, human-robot collaboration, autonomous driving, and healthcare. 
+The active projects include, but are not limited to:</p><br/> 
+<ul>
+<li>Planning for Scalable Reinforcement Learning</li>
+<li>Optimization-based Multi-agent Task and Motion planning</li>
+<li>Learning-based Deformable Object Manipulation</li>
+<li>Fast Visual Navigation in Dynamic, Adversarial Environments</li> 
+<li>Multimodal Tactile-Visual Active Sensing</li>
+<li>Vision-based Semantic Robot Grasping & Control</li>
+<li>Human-centered Robot Mobile Manipulation for Collaboration Tasks</li>
+<li>Differentiable Simulation for Visuomotor Control</li>
+</ul>
+
+
+<h2 id="cm">Current Members</h2>
+<table class="imgtable"><tr><td>
+<img src="Ahmed.jpg" alt="alt text" width="150.0px" height="150.0px" />&nbsp;</td>
+<td align="left"><p><a href="http://qureshiahmed.github.io/">Professor Ahmed H. Qureshi</a><br />
+Director, <b>Co</b>gnitive <b>R</b>obot <b>A</b>utonomy and <b>L</b>earning <b>(CoRAL)</b> Lab <br />
+Ph.D., Electrical and Computer Engineering, UC San Diego<br />
+M.S. Engineering, Osaka University<br />
+B.S. Electrical Engineering, National University of Science and Technology<br />
+Email: ahqureshi AT purdue DOT edu <br />
+Office: HAAS 152 | Office Tel: (765)-496-3071 <br /></p>
+</td></tr></table> 
+
+<table class="imgtable"><tr><td>
+<img src="zwang.jpeg" alt="alt text" width="150.0px" height="150.0px" />&nbsp;</td>
+<td align="left"><p><a href="www.zixingwang.net">Zixing Wang</a><br />
+Ph.D. Student, Computer Science, Purdue University<br />
+M.S. Robotics, University of Minnesota<br />
+B.A. Computer Science, University of Minnesota<br />
+Research Project: Human-in-the-loop Planning &amp; Control <br />
+Email: wang5389 AT purdue DOT edu<br />
+</p>
+</td></tr></table>
+
+<table class="imgtable"><tr><td>
+<img src="ruiqi.jpg" alt="alt text" width="150.0px" height="150.0px" />&nbsp;</td>
+<td align="left"><p><a href="https://ruiqini.github.io/">Ruiqi Ni</a><br />
+Ph.D. Student, Computer Science, Purdue University<br />
+B.S. Computational Mathematics, University of Science and Technology of China<br />
+Research Project: Differentiable Simulation &amp; Optimization for Visuomotor Control<br />
+Email: ni117  AT purdue DOT edu<br />
+</td></tr></table>
+
+<table class="imgtable"><tr><td>
+<img src="ahmed.PNG" alt="alt text" width="150.0px" height="150.0px" />&nbsp;</td>
+<td align="left"><p><a href="https://ruiqini.github.io/">Hanwen Ren</a><br />
+M.S. Computer Science Florida State University<br />
+B.S. Computer Science Florida State University<br />
+Research Project: Dense Active Sensing in Cluttered Environments<br />
+Email: ahqureshi AT purdue DOT edu <br />
+</td></tr></table>
+  
+
+<table class="imgtable"><tr><td>
+<img src="jacobj.jpg" alt="alt text" width="150.0px" height="150.0px" />&nbsp;</td>
+<td align="left"><p><a href="https://jacobjj.github.io/">Jacob Johnson</a><br />
+Ph.D. Student, Electrical &amp; Computer Engineering, UC San Diego<br />
+B. Tech. Electronics and Communication Engineering, IIT Guwahati<br /> 
+Research Project: Differentiable Neural Motion Planning<br />
+Email: jjj025  AT ucsd DOT edu <br />
+Co-Advisor(s): Michael C. Yip (UCSD)  <br /></p>
+</td></tr></table>
+
+<table class="imgtable"><tr><td>
+<img src="zhiwang.jpg" alt="alt text" width="150.0px" height="150.0px" />&nbsp;</td>
+<td align="left"><p><a href="https://www.linkedin.com/in/zhiquan-wang-877398178/">Zhiquan Wang</a><br />
+Ph.D. Student, Computer Graphics Technology, Purdue University<br />
+B.S. Computer Science, Nanjing Tech University<br />
+Research Project: Reinforcement Learning-based Procedural Animation<br />
+Email: wang4490 AT purdue DOT edu <br />
+Co-Advisor(s): Bedrich Benes (Purdue)</p>
+</td></tr></table>
+
+<table class="imgtable"><tr><td>
+<img src="abhinav.JPG" alt="alt text" width="150.0px" height="150.0px" />&nbsp;</td>
+<td align="left"><p><a href="https://www.linkedin.com/in/abhinav-kaushal-keshari-656692103/">Abhinav K. Keshari</a><br />
+M.S. Student, Computer Engineering, Purdue University<br />
+B.Tech ECE, IIT Roorkee<br />
+Research Project: Semantic Robot Grasping<br />
+Email: akeshari AT purdue DOT edu <br />
+</td></tr></table>
+
+<table class="imgtable"><tr><td>
+<img src="ahmed.PNG" alt="alt text" width="150.0px" height="150.0px" />&nbsp;</td>
+<td align="left"><p><a href="https://jacobjj.github.io/">Kendal G Norman</a><br />
+M.S. Computer Science Florida State University<br />
+B.S. Computer Science Florida State University<br />
+Research Project: Differentiable Simulation for Planning &amp; Control <br />
+Email: ahqureshi AT purdue DOT edu <br />
+</td></tr></table>
+
+<table class="imgtable"><tr><td>
+<img src="pdhir.PNG" alt="alt text" width="150.0px" height="150.0px" />&nbsp;</td>
+<td align="left"><p><a href="https://jacobjj.github.io/">Prabhpreet Dhir (Preet Dhir)</a><br />
+M.S. Student, Aeronautics and Astronautics Engineering, Purdue University<br />
+B.S. Aeronautics and Astronautics Engineering,  Purdue University<br />
+Research Project: Multi-agent Task Allocation <br />
+Email: pdhir AT purdue DOT edu <br />
+</td></tr></table>
+
+<table class="imgtable"><tr><td>
+<img src="ahmed.PNG" alt="alt text" width="150.0px" height="150.0px" />&nbsp;</td>
+<td align="left"><p><a href="https://jacobjj.github.io/">Kartik Pant</a><br />
+M.S. Computer Science Florida State University<br />
+B.S. Computer Science Florida State University<br />
+Research Project: Differentiable Simulation for Planning &amp; Control <br />
+Email: ahqureshi AT purdue DOT edu <br />
+Web: HAAS 152 <br /></p>
+</td></tr></table>
+
+<table class="imgtable"><tr><td>
+<img src="dlawson.jpg" alt="alt text" width="150.0px" height="150.0px" />&nbsp;</td>
+<td align="left"><p><a href="(https://www.linkedin.com/in/daniel-lawson-090287153/">Daniel Lawson</a><br />
+B.S Student, Computer Science, Purdue University<br />
+Research Project: Planning for Scalable Reinforcement Learning<br />
+Email: lawson95 AT purdue DOT edu <br />
+</td></tr></table>
+<h2 id="ju">Prospective Students, Scholars & Collaborators</h2>
+<p>We are actively looking for students/scholars at all levels (BS/MS/PhDs/Post-docs) with a strong relevant background in Robotics, Machine Learning, and Computer Vision. If you are interested in working with me, please fill out this <a href="https://docs.google.com/forms/d/e/1FAIpQLSeq_yN58oOFeWIsxrVfBVMDCkjhBoiHNFs0MeHBe_lW356-Hg/viewform">form</a>.</p> 
+<p>For collaborations and joint partnership: Our work aligns closely with the industry for solving a wide range of collaborative robotics and autonomous driving tasks in the natural dynamic world. If you have an idea or are interested in collaboration, please contact us.</p>
+
+<div id="footer">
+<div id="footer-text">
+Page generated 2021-11-16 20:40:17 US Eastern Standard Time, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>
