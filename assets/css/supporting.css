@@ -84,7 +84,7 @@ nav>.container {
 }
 @media only screen and (max-width:991px) {
     .top-nav {
-        display:none;
+        display:flex;
     }
     nav.navbar {
         padding-top:0.5em !important;
