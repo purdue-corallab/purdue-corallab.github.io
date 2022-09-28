@@ -29,8 +29,8 @@ footer .overlay::after {
     padding: 2rem 0;
 }
 nav.navbar {
-    padding-top:1em !important;
-    padding-bottom:0.5em !important;
+    padding-top:0em !important;
+    padding-bottom:0.em !important;
 }
 .navbar-expand-lg .navbar-nav {
     margin-top:38px;
@@ -87,7 +87,7 @@ nav>.container {
         display:flex;
     }
     nav.navbar {
-        padding-top:0.5em !important;
+        padding-top:0.0em !important;
         padding-bottom:0 !important;
     }
   .navbar-brand img {
